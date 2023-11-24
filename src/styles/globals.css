@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Tektur:wght@700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.gradient {
+  position: absolute;
+  --size: 250px;
+  --speed: 15s;
+  --easing: cubic-bezier(0.8, 0.2, 0.2, 0.8);
+  width: var(--size);
+  height: var(--size);
+  filter: blur(calc(var(--size) / 3));
+  background-image: linear-gradient(rgba(35, 14, 48, 0.769), #3d1a55);
+  animation: rotate var(--speed) var(--easing) alternate infinite;
+  border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
+  z-index: -50;
+}
+
+@media (min-width: 720px) {
+  .gradient {
+    --size: 500px;
+  }
+}
+.gradienth1 {
+  position: absolute;
+  --size: 250px;
+  --speed: 15s;
+  --easing: cubic-bezier(0.8, 0.2, 0.2, 0.8);
+  width: var(--size);
+  height: var(--size);
+  filter: blur(calc(var(--size) / 3));
+  background-image: linear-gradient(rgba(35, 14, 48, 0.769), #3d1a55);
+  animation: rotate var(--speed) var(--easing) alternate infinite;
+  border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
+  z-index: -50;
+}
+
+@media (min-width: 1023px) {
+  .gradienth1 {
+    --size: 0px;
+  }
+}
